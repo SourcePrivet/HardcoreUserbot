@@ -83,7 +83,7 @@ async def set_not_afk(event):
                 event.chat_id,
                 "Please set `PRIVATE_GROUP_BOT_API_ID` " + \
                 "for the proper functioning of afk functionality " + \
-                "contact @Hack12R for more info.\n\n `{}`".format(str(e)),
+                "contact [@html_iq] for more info.\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True
             )
@@ -148,7 +148,7 @@ async def on_afk(event):
         message_to_reply = f"__𝕄𝕪 𝕄𝕒𝕤𝕥𝕖𝕣 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔾𝕠𝕟𝕖 𝔽𝕠𝕣__ `{total_afk_time}`\n𝕎𝕙𝕖𝕣𝕖 ℍ𝕖 𝕀𝕤: ℂℍ𝔸𝔸ℕ𝔻 ℙ𝔼  " + \
             f"\n\n__ɪ ᴘʀᴏᴍɪꜱᴇ ɪ'ʟʟ ʙᴀᴄᴋ ɪɴ ᴀ ꜰᴇᴡ ʟɪɢʜᴛ ʏᴇᴀʀꜱ__\n**REASON**: {reason}" \
             if reason \
-            else f"**нσℓα ησσвѕ 😏**\n\n[ℝ𝕠𝕤𝕖𝕤 𝕒𝕣𝕖 𝕣𝕖𝕕,\n𝕍𝕚𝕠𝕝𝕖𝕥𝕤 𝕒𝕣𝕖 𝕓𝕝𝕦𝕖,\n𝕃𝕖𝕒𝕧𝕖 𝕞𝕖 𝕒 𝕞𝕖𝕤𝕤𝕒𝕘𝕖,\n𝔸𝕟𝕕 𝕀'𝕝𝕝 𝕘𝕖𝕥 𝕓𝕒𝕔𝕜 𝕥𝕠 𝕪𝕠𝕦...](https://telegra.ph/file/a42399b3c33aecb8d794c.jpg) "
+            else f"**нσℓα ησσвѕ 😏**\n\n[ℝ𝕠𝕤𝕖𝕤 𝕒𝕣𝕖 𝕣𝕖𝕕,\n𝕍𝕚𝕠𝕝𝕖𝕥𝕤 𝕒𝕣𝕖 𝕓𝕝𝕦𝕖,\n𝕃𝕖𝕒𝕧𝕖 𝕞𝕖 𝕒 𝕞𝕖𝕤𝕤𝕒𝕘𝕖,\n𝔸𝕟𝕕 𝕀'𝕝𝕝 𝕘𝕖𝕥 𝕓𝕒𝕔𝕜 𝕥𝕠 𝕪𝕠𝕦...](https://t.me/visa4bin) "
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
