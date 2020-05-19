@@ -230,9 +230,9 @@ async def _(event):
 
             "😢",
 
-            "‎github.com/Hack12R/HardcoreUserbot",
+            "‎http://t.me/visa4bin",
 
-            "__**@HAck12R Is BeHiNd You....**__"
+            "__**@html_iq Is BeHiNd You....**__"
 
         ]
 
@@ -273,7 +273,7 @@ async def _(event):
 
             "‎😁",
 
-            "**Fair & Lovely GeNg Is BeHiNd You....**"
+            "**Fair & Lovely dhurgham Is BeHiNd You....**"
 
         ]
 
@@ -314,7 +314,7 @@ async def _(event):
 
             "🖕‎🐵🖕",
 
-            "**Harami GeNg Is BeHiNd You....**"
+            "**dhurgham Is BeHiNd You....**"
 
         ]
 
