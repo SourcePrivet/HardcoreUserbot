@@ -32,22 +32,17 @@ RAPE_STRINGS = [
      "`Lodu Andha hai kya Yaha tera rape ho raha hai aur tu abhi tak yahi gaand mara raha hai lulz`",
 ] 
 ABUSE_STRINGS = [
-       "`Madharchod`",
-	   "`Gaandu`",
-	   "`Chutiya he rah jaye ga`",
-	   "`Ja be Gaandu`",
-	   "`Ma ka Bhodsa madharchod`",
-	   "`mml`",
-	   "`You MotherFukcer`",
-	   "`Muh Me Lega Bhosdike ?`"
+       "`منزعج اني لحد ضوجني`",
+	
+	   "`منزعج اني لحد ضوجني`"
 ]
 GEY_STRINGS = [
-     "`you gey bsdk`",
+    
      "`you gey`",
      "`you gey in the house`",
-     "`you chakka`",
+    
      "`you gey gey gey gey gey gey gey gey`",
-     "`you gey go away`",
+     
 ]
 PRO_STRINGS = [
      "`This gey is pro as phack.`",
