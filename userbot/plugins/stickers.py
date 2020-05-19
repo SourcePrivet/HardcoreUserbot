@@ -37,7 +37,7 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.is_reply:
-        await event.edit("Reply to a photo to add to my personal sticker pack.**( ఠ ͟ʖ ఠ)")
+        await event.edit("قم بعمل رد على صوره او ملصق ليتم اضافته!")
         return
     reply_message = await event.get_reply_message()
     sticker_emoji = "🔥"
@@ -52,7 +52,7 @@ async def _(event):
     userid = event.from_id
     packname = f"{user.first_name}'s hot Vol.{pack}"
     packshortname = f"vol_{pack}_with_{userid}"
-    await event.edit("`Look dat way,it's a gurl!\nMeanwhile, lemme kang this stcker over hehe (,,Ծ‸Ծ,,)`")
+    await event.edit("`جاري سحب الملصق`")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Hack12R_roxx.png"
@@ -62,8 +62,8 @@ async def _(event):
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
         packname = f"{user.first_name}'s Animated {pack}"
-        if userid == 1037944593:
-            packshortname = "Hack12R_Animated"
+        if userid == 204510771:
+            packshortname = "@html_iq"
         else:
             packshortname = f"Moi_animated_{pack}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
@@ -92,7 +92,7 @@ async def _(event):
             response = await silently_send_message(bot_conv, packname)
             if not response.text.startswith("Alright!"):
                 if "unacceptable" in response.text:
-                    packname = f"{user.id}'s hot Vol.{pack}"
+                    packname = f"{user.id} .{pack}"
                     response = await silently_send_message(bot_conv, packname)
                 else:
                     await event.edit(f"**FAILED**! @Stickers replied: {response.text}")
@@ -192,7 +192,7 @@ async def _(event):
                 await silently_send_message(bot_conv, "/done")
 
 
-    await event.edit(f"**Kanged!** `This sticker has been stolen to` [this place](t.me/addstickers/{packshortname}), pack{pack}"
+    await event.edit(f"**!** `تم اضافه الملصق ` [this place](t.me/addstickers/{packshortname}), pack{pack}"
                      f" `by` {DEFAULTUSER}\n**(-’๏_๏’-)**")
 
 
@@ -230,7 +230,7 @@ async def _(event):
                      f"**Archived:** `{get_stickerset.set.archived}`\n"
                      f"**Stickers In Pack:** `{len(get_stickerset.packs)}`\n"
                      f"**Emojis In Pack:** {' '.join(pack_emojis)}")
-
+                     f"** by @visa4bin **\n"
 
 @borg.on(admin_cmd(pattern="getsticker ?(.*)"))
 async def _(event):
