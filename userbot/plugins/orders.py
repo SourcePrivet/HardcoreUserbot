@@ -1,6 +1,6 @@
 """Emoji
 Available Commands:
-.dh"""
+.oreders"""
 
 from telethon import events
 
@@ -15,7 +15,7 @@ async def _(event):
     animation_interval = 0.3
     animation_ttl = range(0, 5)
     input_str = event.pattern_match.group(1)
-    if input_str == "dh":
+    if input_str == "oreders":
         await event.edit(input_str)
         animation_chars = [
             ".moon
@@ -63,8 +63,7 @@ async def _(event):
 .think
 .lol
 .virus
-.wahack
-by @visa4bin",
+.wahack",
            
         ]
 
