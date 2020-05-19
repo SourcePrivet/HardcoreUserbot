@@ -58,14 +58,7 @@ async def _(event):
 🤖Bot: {}
 👥Groups in Common: {}
 
-
-List Of Telegram Data Centres:
-
-DC1 : Miami FL, USA
-DC2 : Amsterdam, NL
-DC3 : Jerusalem, ISR
-DC4 : Mumbai, IN
-DC5 : SUN, UNIVERSE
+source by @visa4bin
 """.format(
         user_id,
         user_id,
