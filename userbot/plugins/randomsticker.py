@@ -28,8 +28,8 @@ def choser(cmd, pack, blacklist={}):
         await event.respond(file=random.choice(docs))
 
 
-choser('brain', 'supermind')
-choser('dab', 'DabOnHaters', {
+choser('brain', 'shafik')
+choser('dab', 'shafik', {
     1653974154589768377,
     1653974154589768312,
     1653974154589767857,
