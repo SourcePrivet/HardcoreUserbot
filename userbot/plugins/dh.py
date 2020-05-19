@@ -12,8 +12,8 @@ from userbot.utils import admin_cmd
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.00001
-    animation_ttl = range(0, 90)
+    animation_interval = 0.3
+    animation_ttl = range(0, 5)
     input_str = event.pattern_match.group(1)
     if input_str == "dh":
         await event.edit(input_str)
@@ -22,13 +22,10 @@ async def _(event):
             "باء",
             "تاء",
             "ثاء",
-            "هيا ننكح",
-            "العراب",
-           
-            "الف باء تاء ثاء هيا ننكح العراب "
+            "هيا ننكح العراب"
         ]
 
         for i in animation_ttl:
         	
             await asyncio.sleep(animation_interval)
-            await event.edit(animation_chars[i % 18])
+            await event.edit(animation_chars[i %5 ])
