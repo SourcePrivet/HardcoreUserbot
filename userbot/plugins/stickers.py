@@ -230,7 +230,7 @@ async def _(event):
                      f"**Archived:** `{get_stickerset.set.archived}`\n"
                      f"**Stickers In Pack:** `{len(get_stickerset.packs)}`\n"
                      f"**Emojis In Pack:** {' '.join(pack_emojis)}")
-                     f"** by @visa4bin **\n"
+                     
 
 @borg.on(admin_cmd(pattern="getsticker ?(.*)"))
 async def _(event):
